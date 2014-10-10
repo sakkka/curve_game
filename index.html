@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>	
+	<title>CurveGame</title>
+	<!-- scripts -->
+	<script type="text/javascript" src="script/jquery.min.js"></script>
+	<script type="text/javascript" src="script/snake.js" ></script>
+	<!-- <script type="text/javascript" src="script/soundmanager2.js"></script> -->
+	<!-- <script type="text/javascript">
+	soundManager.url = 'swf/';
+	soundManager.debugMode = true;
+	</script> -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+</head>
+
+<body>
+
+
+    <div id="menu">
+		<h1>Curve Game</h1>
+	</div>
+	<br>
+
+    <canvas id="canvas" width="1000" height="500"></canvas>
+
+	<div id="addPlayer">
+	    <button id="start" value="start" onClick ="jouer()">Jouer</button>
+		<button id="pause" value="pause">Pause</button>
+		<div id="compte"></div>
+		<br>
+		<br>
+		<b>Joueur / couleur / commande</b>
+		<br>
+		<div id="playerList">
+		</div>
+		<br>
+		<input id="playerName" type="text" name="playerName" maxlength="15" style="background-color:transparent" size=10>
+		<button id="addbut" value="add" onClick ="addPlayer()"><b>+</b></button>
+	</div>
+	<br><br>
+	<audio id="audio" src="son/
+	Air.mp3" controls preload="auto"></audio>
+
+	<audio preload="auto" id="son">		
+	  <source src="son/crop.mp3" type="audio/mp3">
+	</audio>
+
+	<audio preload="auto" id="son1">	
+	 <source src="son/explosion.mp3" type="audio/mp3">
+	</audio>
+
+	<audio preload="auto" id="son2">	
+	 <source src="son/impact2.mp3" type="audio/mp3">
+	</audio>
+
+	<br>
+	
+
+ 
+	<div id="footer">
+		
+		<p>	Copyright 2013-2014 © - SCHNAKE INDUSTRY ® - L'ABUS D'ALCOOL EST DANGEREUX POUR LA SANTE. A CONSOMMER AVEC MODERATION. </p>
+	</div>
+</body>
+</html>
+
+
+ 

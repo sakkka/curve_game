@@ -1,0 +1,56 @@
+.menu, h1{
+    position: relative;
+    border: 2px; 
+    font: 50px "Press Start 2P", cursive;
+    color: #B0B0B0;
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: -20px;
+        text-shadow:
+       3px 3px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+
+input {
+    font-weight:bold;
+}
+
+#addPlayer {
+	float:right;
+    position:relative;
+	width:20%;
+	margin-right:10px;
+    color: white;
+    /*-webkit-text-stroke: 1px black;*/
+    text-shadow:
+       2px 2px 0 #000,
+     -1px -1px 0 #000,  
+      1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000;
+}
+#addButton {
+	width:60px;
+	height:23px;
+    -webkit-text-stroke: 1px black;
+}
+canvas {
+    margin-left: 30px;
+    border: 3px solid white;
+}
+
+#audio {
+    margin-left: 30px;
+}
+body {
+
+background: url("img/background.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+

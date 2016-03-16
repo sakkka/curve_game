@@ -25,6 +25,14 @@ function decompte()
 
 }*/
 
+
+
+function aide() {
+	alert(
+		'Ajoutez des joueurs en reinseignant leur pseudo dans le champs texte puis cliquez sur (+). Button "Jouer" pour commencer la partie !\n\n Add players by typing their names in the textbox and press "Jouer" to start'
+		);
+}
+
 function fin_partie(){
 	var fini = false;
 	
@@ -103,6 +111,7 @@ function addPlayer()
 	document.getElementById('playerList').innerHTML = string;
 	nbplayer++;
 	
+	document.getElementById("start").disabled = false; 
 	
 }
 function affichage()
@@ -516,11 +525,11 @@ function aka() // fonction principale de jeu
 	{
 		var col;
 		switch (name.id) {
-			case 1 : col = "chartreuse";
+			case 1 : col = "#7FFF00";
 			break;
-			case 2 : col = "deepPink";
+			case 2 : col = "#ff1493";
 			break;
-			case 3 : col = "LightSkyBlue";
+			case 3 : col = "#87cefa";
 			break;
 			case 4 : col = "Orange";
 			break;
@@ -551,21 +560,21 @@ function aka() // fonction principale de jeu
   				if(matrice[i][j]==1)
   				{
 	  				ctx.beginPath();
-					ctx.fillStyle = "chartreuse";
+					ctx.fillStyle = "#7FFF00";
 	  				ctx.arc(i, j, 3, 0, Math.PI*2);
 	  				ctx.fill();
 				}
 				if(matrice[i][j]==2)
   				{
 	  				ctx.beginPath();
-					ctx.fillStyle = "deepPink ";
+					ctx.fillStyle = "#ff1493 ";
 	  				ctx.arc(i, j, 3, 0, Math.PI*2);
 	  				ctx.fill();
 				}
 				if(matrice[i][j]==3)
   				{
 	  				ctx.beginPath();
-					ctx.fillStyle = "LightSkyBlue ";
+					ctx.fillStyle = "#87cefa ";
 	  				ctx.arc(i, j, 3, 0, Math.PI*2);
 	  				ctx.fill();
 				}
@@ -629,19 +638,19 @@ function aka() // fonction principale de jeu
 			avancer(snake4);
 
 		if(time != 1 && snake1.vivant==true)
-			paint_cell("chartreuse",snake1);
+			paint_cell("#7FFF00",snake1);
 	
 		if(time==1 && snake1.vivant==true)
 			paint_tete(snake1);	
 		
 		if(time != 2 && snake2.vivant==true)
-		   paint_cell( "deepPink ",snake2);
+		   paint_cell( "#ff1493 ",snake2);
 		
 		if(time==2 && snake2.vivant==true)
 	 		paint_tete(snake2);
 	 	
 	 	if(time != 3 && snake3.vivant==true)		
-			paint_cell("LightSkyBlue ",snake3);
+			paint_cell("#87cefa ",snake3);
 		
 		if(time == 3 && snake3.vivant==true)
 		paint_tete(snake3);

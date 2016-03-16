@@ -53,4 +53,40 @@ background-size: cover;
 
 }
 
+.footer {
+  margin-left: 30px;
+}
+
+.aide {
+  cursor: pointer;
+  color:#d3d3d3;
+  text-shadow : none;
+  text-decoration: underline;
+
+}
+
+
+@-webkit-keyframes focusOnStart {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+  
+  100% {
+    
+    transform: scale(1);
+  }
+}
+
+.focusOnStart {
+  -webkit-animation : focusOnStart 0.4s 2 linear;
+}
+
+#menu {
+  margin-bottom: 20px;
+
+}
 

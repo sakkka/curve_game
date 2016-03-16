@@ -29,10 +29,14 @@
 
     <canvas id="canvas" width="1000" height="500"></canvas>
 
-	<div id="addPlayer">
-	    <button id="start" value="start" onClick ="jouer()">Jouer</button>
+	<div id="addPlayer" class="focusOnStart">
+	    <button id="start" value="start" onClick ="jouer()" disabled>Jouer</button>
 		<button id="pause" value="pause">Pause</button>
+		&nbsp &nbsp
+		<a class="aide" onclick="aide()">help</a>
 		<div id="compte"></div>
+		<br>
+		AJOUTER DES JOUEURS
 		<br>
 		<br>
 		<b>Joueur / couleur / commande</b>
@@ -60,12 +64,12 @@
 	</audio>
 
 	<br>
-	
+
 
  
-	<div id="footer">
+	<div class="footer">
 		
-		<p>	Copyright 2013-2014 © - SCHNAKE INDUSTRY ® - L'ABUS D'ALCOOL EST DANGEREUX POUR LA SANTE. A CONSOMMER AVEC MODERATION. </p>
+		<p>	Copyright 2013-2014 © - SCHNAKE INDUSTRY ®</p>
 	</div>
 </body>
 </html>
